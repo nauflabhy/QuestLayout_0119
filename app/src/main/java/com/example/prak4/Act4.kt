@@ -58,7 +58,8 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
                     painter = gambar,
                     contentDescription = null,
                     modifier = Modifier.size(100.dp).padding(5.dp)
-                ) Spacer(modifier = Modifier.width(30.dp))
+                )
+                Spacer(modifier = Modifier.width(30.dp))
                 Column {
                     Text(
                         text = stringResource(R.string.nama),
@@ -66,18 +67,20 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
                         fontFamily = FontFamily.Cursive,
                         color = Color.White,
                         modifier = Modifier.padding(top = 15.dp)
-                    ) Text(
-                            text = stringResource(R.string.alamat),
-                    fontSize = 15.sp,
-                    color = Color.Yellow,
-                    modifier = Modifier.padding(top = 10.dp)
+                    )
+                    Text(
+                        text = stringResource(R.string.alamat),
+                        fontSize = 15.sp,
+                        color = Color.Yellow,
+                        modifier = Modifier.padding(top = 10.dp)
                     )
                 }
             }
-        } Box(
-                modifier = Modifier
-                    .fillMaxSize()
-                ) {
+        }
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+        ) {
             Text(
                 text = stringResource(R.string.copy),
                 modifier = Modifier
